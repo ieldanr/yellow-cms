@@ -5,7 +5,7 @@
 			<a href="index.html" class="navbar-brand">
 				<img src="assets/images/logo.png" alt="Nifty Logo" class="brand-icon">
 				<div class="brand-title">
-					<span class="brand-text">Over</span>
+					<span class="brand-text">Peniche Larrea</span>
 				</div>
 			</a>
 		</div>
@@ -32,42 +32,27 @@
 						<div class="pad-all bord-btm">
 							<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
 						</div>
-						<div class="nano scrollable has-scrollbar" style="height: 0px;">
+						<div class="">
 							<div class="nano-content" tabindex="0" style="right: -17px;">
 								<ul class="head-list">
-
-									<!-- Dropdown list-->
 									<li>
 										<a href="#" class="media">
-											<div class="media-left">
-												<img src="assets/images/av2.png" alt="Profile Picture" class="img-circle img-sm">
-											</div>
 											<div class="media-body">
 												<div class="text-nowrap">Andy sent you a message</div>
 												<small class="text-muted">15 minutes ago</small>
 											</div>
 										</a>
 									</li>
-
-									<!-- Dropdown list-->
 									<li>
 										<a href="#" class="media">
-											<div class="media-left">
-											<img src="assets/images/av4.png" alt="Profile Picture" class="img-circle img-sm">
-										</div>
 										<div class="media-body">
 											<div class="text-nowrap">Lucy sent you a message</div>
 											<small class="text-muted">30 minutes ago</small>
 										</div>
 										</a>
 									</li>
-
-									<!-- Dropdown list-->
 									<li>
 										<a href="#" class="media">
-											<div class="media-left">
-											<img src="assets/images/av3.png" alt="Profile Picture" class="img-circle img-sm">
-										</div>
 										<div class="media-body">
 											<div class="text-nowrap">Jackson sent you a message</div>
 											<small class="text-muted">Yesterday</small>
@@ -76,86 +61,12 @@
 									</li>
 								</ul>
 							</div>
-							<div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 20px; transform: translate(0px, 0px);"></div>
-							</div>
 						</div>
 
 						<!--Dropdown footer-->
 						<div class="pad-all bord-top">
 							<a href="#" class="btn-link text-dark box-block">
 								<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Messages
-							</a>
-						</div>
-					</div>
-				</li>
-
-				<!--Notification dropdown-->
-				<li class="dropdown">
-					<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-						<i class="fa fa-bell fa-lg"></i>
-						<span class="badge badge-header badge-danger">5</span>
-					</a>
-
-					<!--Notification dropdown menu-->
-					<div class="dropdown-menu dropdown-menu-md with-arrow">
-						<div class="pad-all bord-btm">
-							<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
-						</div>
-						<div class="nano scrollable has-scrollbar" style="height: 0px;">
-							<div class="nano-content" tabindex="0" style="right: -17px;">
-								<ul class="head-list">
-									<!-- Dropdown list-->
-									<li>
-										<a href="#" class="media">
-										<div class="media-left">
-											<span class="icon-wrap icon-circle bg-primary">
-												<i class="fa fa-comment fa-lg"></i>
-											</span>
-										</div>
-										<div class="media-body">
-										<div class="text-nowrap">New comments waiting approval</div>
-										<small class="text-muted">15 minutes ago</small>
-										</div>
-										</a>
-									</li>
-
-									<!-- Dropdown list-->
-									<li>
-										<a href="#" class="media">
-											<span class="badge badge-success pull-right">90%</span>
-											<div class="media-left">
-												<span class="icon-wrap icon-circle bg-danger">
-													<i class="fa fa-hdd-o fa-lg"></i>
-												</span>
-											</div>
-											<div class="media-body">
-												<div class="text-nowrap">HDD is full</div>
-												<small class="text-muted">50 minutes ago</small>
-											</div>
-										</a>
-									</li>
-
-									<!-- Dropdown list-->
-									<li>
-										<a href="#" class="media">
-											<div class="media-left">
-												<span class="icon-wrap bg-info">
-													<i class="fa fa-file-word-o fa-lg"></i>
-												</span>
-											</div>
-											<div class="media-body">
-												<div class="text-nowrap">Write a news article</div>
-												<small class="text-muted">Last Update 8 hours ago</small>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--Dropdown footer-->
-						<div class="pad-all bord-top">
-							<a href="#" class="btn-link text-dark box-block">
-								<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
 							</a>
 						</div>
 					</div>
@@ -194,7 +105,7 @@
 						<span class="pull-right">
 							<img class="img-circle img-user media-object" src="assets/images/av1.png" alt="Profile Picture">
 						</span>
-						<div class="username hidden-xs">John Doe</div>
+						<div class="username hidden-xs">{{ getCurrentUser().name }}</div>
 					</a>
 					<div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
 						<!-- Dropdown heading  -->
@@ -237,7 +148,7 @@
 						</ul>
 						<!-- Dropdown footer -->
 						<div class="pad-all text-right">
-							<a href="pages-login.html" class="btn btn-primary">
+							<a href="" ng-click="logout()" class="btn btn-primary">
 								<i class="fa fa-sign-out fa-fw"></i> Logout
 							</a>
 						</div>
@@ -247,3 +158,4 @@
 		</div>
 	</div>
 </header>
+

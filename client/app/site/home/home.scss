@@ -1,0 +1,222 @@
+.thing-form {
+  margin: 20px 0;
+}
+
+#banner {
+  border-bottom: none;
+  margin-top: -20px;
+}
+
+#banner h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.hero-unit {
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #4393B9;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
+}
+.product {
+  height: 420px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.product .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product .image img {
+  transition: opacity .3s ease-out;
+  height: 100%;
+  position: absolute;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-info {
+  max-width: 140px;
+  color: rgba(0, 0, 0, 0.39);
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  text-align: left;
+  font-size: 16px;
+  z-index: 2;
+}
+.price {
+  font-size: 33px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-style: normal;
+  display: block;
+}
+.price .number {
+  font-weight: 300;
+}
+.currency {
+  font-weight: 400;
+  margin-right: 5px;
+  font-style: normal;
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 9px;
+  vertical-align: top;
+}
+.front-bg { 
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.front-bg div.headline { 
+  margin: 0 auto;
+  width: 900px;
+  margin-top: 200px;
+
+}
+.front-bg div span { 
+  z-index: 2;
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #177ec3;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+.fixedBlock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.button.arrow {
+  width: 48px;
+  height: 42px;
+  cursor: pointer;
+}
+.mainSection .button {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  margin: 0 auto;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2067b8;
+  background: rgba(255, 255, 255, 0.0);
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  -webkit-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.button.arrow .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  width: 22px;
+  height: 11px;
+  background: url(/assets/images/arrow.png);
+}
+.button .inner {
+  padding: 13px 19px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.keep-navigation {
+  position: absolute;
+  bottom: 140px;
+  left:48%;
+}
+.keep-navigation:hover{
+  background-color: white;
+  opacity: .9;
+}
+
+/**************************** NAV *************************************/
+.navbar {
+  padding-top: 10px;
+}
+.navbar-header {
+  background-color: transparent;
+}
+.navbar-nav > li > a {
+  letter-spacing: 0.07em;
+  margin-left: 20px;
+  color: #666;
+  text-transform: uppercase;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: right;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
+  color: #1a83ca;
+  background-color: transparent;
+}
+.navbar-nav > li > a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 11px;
+  background: #346fb2;
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.navbar-nav > li > a:hover:after, .navbar-nav > li > a.hover:after {
+  width: 90%;
+  opacity: 1;
+  margin: 0 3px 0px 4px;
+}
+.navbar-nav > li > a:before, .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  height: 10px;
+  width: 1px;
+  background: #90b6c7;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.navbar-nav > li:first-child > a:before {
+  content: none;
+}

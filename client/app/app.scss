@@ -9,16 +9,39 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
  */
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
+p {
+	margin: 0px;
+}
+.text-center {
+	text-align: center;
+}
+.jumbotron-bg {
+	height: 500px;
+}
+.jumbotron-bg > .headline {
+	color: white;
+}
+.jumbotron-bg > img {
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	max-height: 500px;
+}
+.jumbotron-bg {
+	
+}
 // Component styles are injected through grunt
 // injector
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
-@import 'main/main.scss';
+@import 'site/casualties/casualties.scss';
+@import 'site/home/home.scss';
+@import 'site/insurance/insurance.scss';
 @import 'modal/modal.scss';
 // endinjector

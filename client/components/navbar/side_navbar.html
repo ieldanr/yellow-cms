@@ -1,70 +1,35 @@
-<div class="col-sm-3 col-md-2 sidebar">
+<div class="col-sm-3 col-md-2 sidebar" ng-controller="SideNavbarCtrl">
   <ul class="nav nav-sidebar">
-  	<li class="list-header">Navigation</li>
-    <li class="active">
+  	<li class="list-header">Navegación</li>
+    <li ng-class="{active: isActive('/admin/dashboard')}">
     	<a href="#">
 				<i class="fa fa-dashboard"></i>
 				<span class="menu-title">
-					<strong>Dashboard</strong>
+					<strong>Panel</strong>
 				</span>
 			</a>
     </li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
+    <li ng-class="{active: isActive('/admin/users')}">
+    	<a href="/admin/users">
+				<i class="fa fa-users"></i>
+				<span class="menu-title">
+					<strong>Usuarios</strong>
+				</span>
+			</a>
+		</li>
+    <li ng-class="{active: isActive('/admin/products')}">
+    	<a href="/admin/products">
+				<i class="fa fa-cube"></i>
 				<span class="menu-title">
 					<strong>Productos</strong>
 				</span>
 			</a>
 		</li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
+    <li ng-class="{active: isActive('/admin/products')}">
+    	<a href="/admin/products">
+				<i class="fa fa-newspaper-o"></i>
 				<span class="menu-title">
-					<strong>Analytics</strong>
-				</span>
-			</a>
-		</li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
-				<span class="menu-title">
-					<strong>Export</strong>
-				</span>
-			</a>
-		</li>
-  </ul>
-  <ul class="nav nav-sidebar">
-  	<li class="list-header">Components</li>
-    <li class="active">
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
-				<span class="menu-title">
-					<strong>Dashboard</strong>
-				</span>
-			</a>
-    </li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
-				<span class="menu-title">
-					<strong>Productos</strong>
-				</span>
-			</a>
-		</li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
-				<span class="menu-title">
-					<strong>Analytics</strong>
-				</span>
-			</a>
-		</li>
-    <li>
-    	<a href="#">
-				<i class="fa fa-dashboard"></i>
-				<span class="menu-title">
-					<strong>Export</strong>
+					<strong>Noticias</strong>
 				</span>
 			</a>
 		</li>

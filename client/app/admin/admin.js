@@ -6,11 +6,13 @@ angular.module('siteTemplateApp')
       .state('admin_products', {
         url: '/admin/products',
         templateUrl: 'app/admin/products/products.html',
-        controller: 'AdminProductsCtrl'
+        controller: 'AdminProductsCtrl',
+        authenticate: true
       })
       .state('admin_users', {
         url: '/admin/users',
         templateUrl: 'app/admin/users/users.html',
-        controller: 'AdminUsersCtrl'
+        controller: 'AdminUsersCtrl',
+        authenticate: true
       });
   });
