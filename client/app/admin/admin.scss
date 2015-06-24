@@ -68,10 +68,6 @@ body {
   margin: 0 10px;
   line-height: 50px;
 }
-.navbar-header {
-  background-color: #3b4146;
-}
-
 #content-container {
   padding-top: 50px;
 }
@@ -356,4 +352,7 @@ body {
 }
 .container-fluid, .container-fluid > div {
   height: 100%;
+}
+.admin-navbar > div > .navbar-header {
+  background-color: #3b4146;
 }

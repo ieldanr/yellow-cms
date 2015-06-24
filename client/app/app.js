@@ -5,14 +5,24 @@ angular.module('siteTemplateApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
+  'duScroll',
+  'validation',
+  'pascalprecht.translate',
   'ui.bootstrap'
 ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $translateProvider) {
     $urlRouterProvider
       .otherwise('/');
 
     $locationProvider.html5Mode(true);
     $httpProvider.interceptors.push('authInterceptor');
+
+    $translateProvider.useStaticFilesLoader({
+      prefix: '/languages/',
+      suffix: '.json'
+    });
+    $translateProvider.preferredLanguage('es');
+    $translateProvider.useSanitizeValueStrategy('escaped');
   })
 
   .factory('authInterceptor', function ($rootScope, $q, $cookieStore, $location) {
@@ -51,3 +61,28 @@ angular.module('siteTemplateApp', [
       });
     });
   });
+
+
+(function() {
+  mapController.$inject = ['$scope'];
+    function mapController($scope) {
+      $scope.initialize = function() {
+        var myLatlng = new google.maps.LatLng(21.038659, -89.639598);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+          mapOptions);
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          title:"Peniche Larrea"
+        });
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
+      }
+    }
+  angular.module("siteTemplateApp").controller("mapController", mapController);
+}());

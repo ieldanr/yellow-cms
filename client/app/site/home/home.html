@@ -1,5 +1,5 @@
+<div class="full-bg-header" ng-include="'components/navbar/navbar.html'"></div>
 <div class="front-bg">
-  <div ng-include="'components/navbar/navbar.html'"></div>
   <div class="headline">
     <span class="">Disfruta el hoy, con la seguridad del mañana.</span>
   </div>
@@ -12,15 +12,16 @@
 </div>
 <div class="container">
   <div class="row">
-      <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="product in products">
-        <a href="#" class="product-link" title="{{product.title}}"></a>
-        <div class="product-info">
-          <div class="price"><span class="currency">$</span><span class="number">32</span></div>
-        </div>
-        <div class="image">
-          <img src="{{product.url}}" alt="">
-        </div>
-        <a href="#" class="btn"><span>View details</span><i class="icon-next"></i></a>
+    <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="product in products">
+      <a href="#" class="product-link" title="{{product.title}}"></a>
+      <div class="product-info">
+        <div class="price"><span class="currency">$</span><span class="number">32</span></div>
       </div>
+      <div class="image">
+        <img src="{{product.url}}" alt="">
+      </div>
+      <a href="#" class="btn"><span>View details</span><i class="icon-next"></i></a>
+    </div>
   </div>
 </div>
+<div ng-include="'components/footer/footer.html'"></div>

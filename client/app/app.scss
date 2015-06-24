@@ -14,34 +14,191 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
   color: #000;
   padding: 0.2em 0;
 }
-
-p {
-	margin: 0px;
-}
-.text-center {
-	text-align: center;
-}
-.jumbotron-bg {
-	height: 500px;
-}
-.jumbotron-bg > .headline {
-	color: white;
-}
-.jumbotron-bg > img {
-	position: absolute;
-	z-index: -10;
-	width: 100%;
-	max-height: 500px;
-}
-.jumbotron-bg {
-	
-}
 // Component styles are injected through grunt
 // injector
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
+@import 'site/about/about.scss';
 @import 'site/casualties/casualties.scss';
 @import 'site/home/home.scss';
 @import 'site/insurance/insurance.scss';
 @import 'modal/modal.scss';
 // endinjector
+
+
+p {
+	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.text-center {
+	text-align: center;
+}
+.jumbotron-bg {
+	height: 350px;
+}
+.jumbotron-bg > .headline {
+	color: white;
+  margin: 0 auto;
+  width: 150px;
+  padding-top: 150px;
+  font-size: 65px;
+  font-weight: bold;
+}
+.jumbotron-bg > .casualties {
+	color: white;
+  margin: 0 auto;
+  width: 210px;
+  padding-top: 150px;
+  font-size: 65px;
+  font-weight: bold;
+}
+.jumbotron-bg > img {
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	max-height: 350px;
+}
+.jumbotron-bg > .keep-navigation {
+  position: relative;
+  margin-top: 195px;
+  left:50%;
+}
+/**************************** NAV *************************************/
+.navbar {
+	position: fixed;
+  padding-top: 10px;
+  width: 100%;
+}
+.site-navbar > div > .navbar-header {
+	background-color: transparent;
+}
+.navbar-nav > li > a {
+	color: white;
+  letter-spacing: 0.07em;
+  margin-left: 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: right;
+}
+.full-bg-header > div > div > div > .navbar-nav > li > a {
+  color: #666;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
+  color: #1a83ca;
+  background-color: transparent;
+}
+.navbar-nav > li > a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 11px;
+  background: #346fb2;
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.navbar-nav > li > a:hover:after, .navbar-nav > li > a.hover:after, .navbar-nav > li.active > a:after {
+  width: 90%;
+  opacity: 1;
+  margin: 0 3px 0px 4px;
+}
+.navbar-nav > li > a:before, .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  height: 10px;
+  width: 1px;
+  background: #90b6c7;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.navbar-nav > li:first-child > a:before {
+  content: none;
+}
+.navbar {
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+  border-radius: 0px;
+  border: 0px solid transparent;
+  padding-top: 0px;
+  z-index: 100;
+}
+.sticky > div > div > .navbar-nav > li > a{
+  color: #333 !important;
+}
+/**************************** FOOTER *************************************/
+#footer {
+	margin-top: 100px;
+	margin-bottom: 30px;
+  color: #8c8c8c;
+  font-size: 14px;
+  background: #fff;
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#footer .columns {
+  overflow: hidden;
+}
+#footer .columns .column {
+  font-size: 13px;
+  line-height: 1.5;
+  float: left;
+  width: 20%;
+  list-style: none;
+}
+#footer .column strong {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 400;
+  color: #505050;
+}
+#footer .column a, #footer .column span {
+  display: block;
+}
+#footer .column strong {
+  font-weight: bold;
+}
+#footer a {
+  color: #8c8c8c;
+}
+#footer .column.expand {
+  width: 60%;
+}
+#footer .copyright {
+  font-size: 12px;
+  margin-top: 50px;
+}
+#footer .socials {
+  font-size: 19px;
+}
+#footer .socials .social {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+#footer .socials .social a:hover {
+  color: #333;
+}

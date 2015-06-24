@@ -21,3 +21,17 @@ angular.module('siteTemplateApp')
       return route === $location.path();
     };
   });
+
+
+angular.module('siteTemplateApp').directive("scroll", function ($window) {
+  return function($scope, element, attrs) {
+    angular.element($window).bind("scroll", function() {
+      if (this.pageYOffset >= 10) {
+        $scope.stickyClass = 'sticky';
+      } else {
+        $scope.stickyClass = '';
+      }
+      $scope.$apply();
+    });
+  };
+});

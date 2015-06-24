@@ -1,0 +1,65 @@
+{ 
+  "LINK_TEXT_ES": "Español",
+  "LINK_TEXT_EN": "Ingles",
+  "HEADER":{
+    "SERVICES": "Servicios",
+    "PORTFOLIO": "Portafolio",
+    "CLIENTS": "Clientes",
+    "HIRE": "Contrátanos"
+  },
+  "INTRO": {
+    "HEADLINE": "Convirtiendo ideas en productos"
+  },  
+  "SERVICES": {
+    "TITLE1": "Servicios",
+    "TITLE2": "Desde páginas web a Startups",
+    "TITLE3": "Una empresa tan versátil que podemos ser el hogar de una Startup internacional.",
+    "WEB_PAGE": "Páginas Web",
+    "WEB_APP": "Aplicaciones Web"
+  },
+  "PRODUCTS": {
+    "TITLE1": "Una plataforma. Toda tu empresa.",
+    "PARAGRAPH1": "Factura en línea, paga tu nómina y administra tu inventario, fácil.",    
+    "TITLE2": "Financiamiento automotriz",
+    "PARAGRAPH2": "Desarrollo de apps nativas de iOS y Android.",
+    "LINK_PORTFOLIO": "Ver portafolio"
+  },
+  "PARTNERS": {
+    "OUR_PARTNERS": "Nuestros socios",
+    "TITLE": "Algunas de las empresas con las que somos afortunados de trabajar",
+    "PARAGRAPH": "Asociados con un grupo de empresas con el objetivo de crear experiencias digitales."
+  },
+  "FOOTER": {
+    "COMPANY": "Empresa",
+    "PORTFOLIO": "Portafolio",
+    "CUSTOMERS": "Clientes",
+    "CONTACT": "Contacto",
+    "PRODUCTS": "Productos",
+    "lANGUAGE": "Idioma",
+    "WITH": "Con"
+  },
+  "PORTFOLIO": {
+    "H1":"Nuestro portafolio",
+    "H2":"Construyendo experiencias digitales",
+    "FEATURED":"Destacado",
+    "WEB_PAGE":"Páginas Web",
+    "WEB_APP":"Aplicaciones Web"
+  },
+  "CLIENTS": {
+    "H1":"Nuestros clientes",
+    "H2":"Desde startups, empresas y organizaciones no lucrativas"
+  },
+  "CONTACT": {
+    "H1":"Una empresa innovadora",
+    "H2":"Ubicados en Mérida, Yucatán",
+    "NAME":"Nombre*",
+    "NAME_ERROR":"Tienes que dejar tu nombre",
+    "EMAIL":"Correo electrónico*",
+    "EMAIL_ERROR":"Tienes que dejar tu email",
+    "MESSAGE":"Mensaje*",
+    "MESSAGE_ERROR":"Tienes que dejar un mensaje",
+    "SEND_BUTTON":"Enviar",
+    "SEND_SUCCESS":"Se envio tu solicitud correctamente",
+    "SEND_ERROR":"Se te estan olvidando algunos datos"
+  }
+}

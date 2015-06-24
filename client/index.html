@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
-    <title>Yellowme</title>
+    <title>Peniche Larrea</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -55,6 +55,11 @@
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-translate/angular-translate.js"></script>
+      <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+      <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+      <script src="bower_components/angular-validation/dist/angular-validation.js"></script>
+      <script src="bower_components/angular-scroll/angular-scroll.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
@@ -68,8 +73,11 @@
           <script src="app/admin/admin.js"></script>
           <script src="app/admin/products/products.controller.js"></script>
           <script src="app/admin/users/users.controller.js"></script>
-          <script src="app/site/casualties/home.controller.js"></script>
-          <script src="app/site/casualties/home.js"></script>
+          <script src="app/services/mailgun.service.js"></script>
+          <script src="app/site/about/about.controller.js"></script>
+          <script src="app/site/about/about.js"></script>
+          <script src="app/site/casualties/casualties.controller.js"></script>
+          <script src="app/site/casualties/casualties.js"></script>
           <script src="app/site/home/home.controller.js"></script>
           <script src="app/site/home/home.js"></script>
           <script src="app/site/insurance/insurance.controller.js"></script>
@@ -84,5 +92,7 @@
           <script src="components/navbar/side_navbar.controller.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
+        
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </body>
 </html>

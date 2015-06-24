@@ -1,4 +1,4 @@
-<div class="navbar" ng-controller="NavbarCtrl">
+<div class="navbar site-navbar" scroll ng-controller="NavbarCtrl" ng-class="stickyClass">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
@@ -11,10 +11,10 @@
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav navbar-right">
-        <li ng-class="{active: isActive('/login')}"><a href="/">Inicio</a></li>
-        <li ng-class="{active: isActive('/login')}"><a href="/seguros">Seguros</a></li>
-        <li ng-class="{active: isActive('/login')}"><a href="/siniestros">Siniestros</a></li>
-        <li ng-class="{active: isActive('/login')}"><a href="/nosotros">Nosotros</a></li>
+        <li ng-class="{active: isActive('/')}"><a href="/">Inicio</a></li>
+        <li ng-class="{active: isActive('/seguros')}"><a href="/seguros">Seguros</a></li>
+        <li ng-class="{active: isActive('/siniestros')}"><a href="/siniestros">Siniestros</a></li>
+        <li ng-class="{active: isActive('/nosotros')}"><a href="/nosotros">Nosotros</a></li>
         <li ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
       </ul>
     </div>

@@ -1,26 +1,30 @@
-<div class="front-bg">
-  <div ng-include="'components/navbar/navbar.html'"></div>
-  <div class="headline">
-    <span class="">Disfruta el hoy, con la seguridad del mañana.</span>
-  </div>
-  <div class="keep-navigation button arrow">
-    <div class="fixedBlock">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="48" height="42" viewport="0 0 48 42" preserveAspectRatio="none" style="width: 48px; height: 42px;"><desc>Created with Snap</desc><defs></defs><path d="M0,0L48,0 L48,42L0,42Z" fill="none" stroke="#49a8e8" fillrule="evenodd" style="stroke-width: 4px; stroke-dasharray: 88px, 92px; stroke-dashoffset: 110px;"></path><path d="M0,0L48,0 L48,42L0,42Z" fill="none" stroke="#3f74b0" fillrule="evenodd" style="stroke-width: 4px; stroke-dasharray: 88px, 92px; stroke-dashoffset: 200px;"></path></svg>
-      <div class="inner"></div>
-    </div>
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="jumbotron-bg">
+  <img src="/assets/images/insurance.jpg" class="">
+  <div class="headline casualties">
+    <span class="">Siniestros</span>
   </div>
 </div>
 <div class="container">
   <div class="row">
-      <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="product in products">
-        <a href="#" class="product-link" title="{{product.title}}"></a>
-        <div class="product-info">
-          <div class="price"><span class="currency">$</span><span class="number">32</span></div>
-        </div>
-        <div class="image">
-          <img src="{{product.url}}" alt="">
-        </div>
-        <a href="#" class="btn"><span>View details</span><i class="icon-next"></i></a>
+    <div class="casualties">
+      <h2>Nuestra filosofía</h2>
+      <hr/>
+      <p class="subheading">Peniche larrea es el lider en seguros del sureste
+      </p>
+      <div class="col-md-4">
+        <h5>Historia</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
       </div>
+      <div class="col-md-4">
+        <h5>Mision</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Visión</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
+      </div>
+    </div>
   </div>
 </div>
+<div ng-include="'components/footer/footer.html'"></div>

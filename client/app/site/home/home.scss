@@ -89,8 +89,7 @@
 .front-bg div.headline { 
   margin: 0 auto;
   width: 900px;
-  margin-top: 200px;
-
+  padding-top: 200px;
 }
 .front-bg div span { 
   z-index: 2;
@@ -162,61 +161,4 @@
 .keep-navigation:hover{
   background-color: white;
   opacity: .9;
-}
-
-/**************************** NAV *************************************/
-.navbar {
-  padding-top: 10px;
-}
-.navbar-header {
-  background-color: transparent;
-}
-.navbar-nav > li > a {
-  letter-spacing: 0.07em;
-  margin-left: 20px;
-  color: #666;
-  text-transform: uppercase;
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-  font-weight: bold;
-  font-size: 11px;
-  text-align: right;
-}
-.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
-  color: #1a83ca;
-  background-color: transparent;
-}
-.navbar-nav > li > a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 11px;
-  background: #346fb2;
-  opacity: 0;
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.navbar-nav > li > a:hover:after, .navbar-nav > li > a.hover:after {
-  width: 90%;
-  opacity: 1;
-  margin: 0 3px 0px 4px;
-}
-.navbar-nav > li > a:before, .navbar-nav > li > a:before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 20px;
-  height: 10px;
-  width: 1px;
-  background: #90b6c7;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-.navbar-nav > li:first-child > a:before {
-  content: none;
 }

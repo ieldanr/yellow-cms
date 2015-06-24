@@ -1,0 +1,63 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="jumbotron-bg">
+  <img src="/assets/images/insurance.jpg" class="">
+  <div class="headline about">
+    <span class="">Nosotros</span>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="aboutus">
+      <h2>Nuestra filosofía</h2>
+      <hr/>
+      <p class="subheading">Peniche larrea es el lider en seguros del sureste
+      </p>
+      <div class="col-md-4">
+        <h5>Historia</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Mision</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Visión</h5>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-6">
+  <div id="contact" class="section contact" ng-controller="AboutCtrl">      
+    <div class="section-content">
+      <div class="col-md-10  col-md-offset-1">
+        <div class="contact-form">
+          <div class="alert"></div>
+            <form id="contact-form" name="FormTravel" novalidate>
+              <div class="center">
+                <h5 class="error" >{{error.$$state.value}}</h5>
+                <h5 class="sucess" >{{sucess.$$state.value}}</h5>
+              </div>
+              <div class="form-group">                                        
+                <input type="text" ng-model="contact.name" class="form-control" name="name" placeholder="{{ 'CONTACT.NAME' | translate }}" validator="required" valid-method="blur" required-error-message="{{ 'CONTACT.NAME_ERROR' | translate }}" >
+              </div>
+              <div class="form-group">                    
+                <input type="email" ng-model="contact.email" class="form-control" name="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}" validator="email" valid-method="blur" email-error-message="{{ 'CONTACT.EMAIL_ERROR' | translate }}">
+              </div>                  
+              <div class="form-group">                    
+                <textarea ng-model="contact.body" name="message" class="form-control" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" validator="required" valid-method="blur" required-error-message="{{ 'CONTACT.MESSAGE_ERROR' | translate }}" ></textarea>
+              </div>                  
+              <button type="submit" class="btn btn-primary btn" id="submit-button" ng-click="formTravel.submit(FormTravel)" loading-btn="respCreate" >
+                <i class="fa loading-icon"></i> <span>Enviar</span>
+              </button>                  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-12 nopadding" ng-controller="mapController">
+  <div id="map-canvas" ng-init="initialize()" style="position: relative; overflow: hidden; transform: translateZ(0px) translateZ(0px) translateZ(0px) translateZ(0px); background-color: rgb(229, 227, 223);"></div>
+</div>
+<div ng-include="'components/footer/footer.html'"></div>
