@@ -356,3 +356,116 @@ body {
 .admin-navbar > div > .navbar-header {
   background-color: #3b4146;
 }
+
+/**************************** TABLES *************************************/
+div.dataTables_filter {
+  text-align: right;
+}
+div.dataTables_info, div.dataTables_info label, div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 13px;
+  color: #888;
+}
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+}
+div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #888;
+}
+div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+div.dataTables_paginate ul.pagination {
+  margin: 2px 0;
+  white-space: nowrap;
+}
+div.dataTables_info {
+  padding-top: 8px;
+  white-space: nowrap;
+}
+.table thead tr th {
+  font-weight: 600;
+  font-size: 13px;
+}
+.table tbody tr td {
+  font-size: 12px;
+}
+.btn-labeled:not(.btn-block):not(.form-icon) {
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.42857;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.btn-labeled, .btn-labeled.fa {
+  overflow: hidden;
+}
+.btn-purple, .btn-purple:focus, .btn-hover-purple:hover, .btn-hover-purple:active, .btn-hover-purple.active, .btn.btn-active-purple:active, .btn.btn-active-purple.active, .dropdown.open>.btn.btn-active-purple, .btn-group.open .dropdown-toggle.btn.btn-active-purple {
+  background-color: #925e8b;
+  border-color: #986291;
+  color: #fff;
+}
+.btn-labeled:before {
+  background-color: rgba(0,0,0,0.05);
+  display: inline-block;
+  margin-left: -12px;
+  margin-right: 6px;
+  padding: 6px 12px;
+}
+.btn-labeled.fa:before, .btn-labeled .fa:before {
+  font-family: fontAwesome;
+}
+.btn-purple:hover, .btn-purple:active, .btn-purple.active, .open>.dropdown-toggle.btn-purple {
+  background-color: #7e5178;
+  border-color: #82547c;
+  color: #fff;
+}
+.btn-default, .btn-default:focus, .btn-hover-default:hover, .btn-hover-default:active, .btn-hover-default.active, .btn.btn-active-default:active, .btn.btn-active-default.active, .dropdown.open>.btn.btn-active-default, .btn-group.open .dropdown-toggle.btn.btn-active-default {
+  background-color: #fafafa;
+  border-color: #cdd6e1;
+  color: #515151;
+}
+.btn-default:hover, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  background-color: #e9e9e9;
+  border-color: #cdd6e1;
+  color: #515151;
+}
+.table-toolbar-right>.form-group {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.table-toolbar-right {
+  text-align: right;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+}
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+}

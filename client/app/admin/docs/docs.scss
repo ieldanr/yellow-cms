@@ -1,0 +1,85 @@
+.docs-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+flatdoc [role~=flatdoc-menu] {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  background-color: #f5f7fa;
+  vertical-align: top;
+  width: 180px;
+}
+flatdoc [role~=flatdoc-menu] {
+  border-right: 1px solid #e1e2e3;
+  font-size: 14px;
+}
+flatdoc [role~=flatdoc-menu] ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+flatdoc [role~=flatdoc-menu] ul a.level-1, flatdoc [role~=flatdoc-menu] ul a.level-1:hover, flatdoc [role~=flatdoc-menu] ul a.level-1:visited {
+  color: #3a3f51;
+}
+flatdoc [role~=flatdoc-menu] ul.level-1>li>a {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e1e2e3;
+  pointer-events: none;
+}
+flatdoc [role~=flatdoc-menu] ul a.level-1, flatdoc [role~=flatdoc-menu] ul a.level-1:hover, flatdoc [role~=flatdoc-menu] ul a.level-1:visited {
+  color: #3a3f51;
+}
+flatdoc [role~=flatdoc-menu] ul a.level-1 {
+  font-family: montserrat,sans-serif;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 700;
+}
+flatdoc [role~=flatdoc-menu] ul.level-2>li+li>a, flatdoc [role~=flatdoc-menu] ul.level-2>li:first-child>a {
+  background-color: rgba(255,255,255,.75);
+}
+flatdoc [role~=flatdoc-menu] ul a.level-2 {
+  font-weight: 600;
+}
+flatdoc [role~=flatdoc-menu] ul a, flatdoc [role~=flatdoc-menu] ul a:visited {
+  color: #3a3f51;
+}
+flatdoc [role~=flatdoc-menu] ul a, flatdoc [role~=flatdoc-menu] ul a:visited {
+  color: #3a3f51;
+}
+flatdoc [role~=flatdoc-menu] ul a {
+  position: relative;
+  display: block;
+  padding: 10px 30px 10px 10px;
+}
+flatdoc [role~=flatdoc-content] {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+}
+flatdoc [role~=flatdoc-content] {
+  padding: 1px 20px 50px;
+  background-color: #fff;
+}
+flatdoc [role~=flatdoc-content]>h1 {
+  padding: 11px 0;
+  margin: 0;
+  line-height: 1;
+}
+flatdoc [role~=flatdoc-content]>h2, flatdoc [role~=flatdoc-content]>h3 {
+  padding: 20px;
+  border-top: 1px solid #f1f2f3;
+  margin: 0 -20px;
+  color: #515253;
+  font-weight: 700;
+}
+flatdoc [role~=flatdoc-content]>ul {
+  padding-left: 40px;
+  margin-bottom: 10.5px;
+}
+flatdoc [role~=flatdoc-content]>p {
+  margin: 0 0 10.5px;
+}

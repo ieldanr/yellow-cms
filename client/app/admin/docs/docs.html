@@ -1,0 +1,131 @@
+<div ng-include="'components/navbar/admin_navbar.html'"></div>
+
+<div class="container-fluid">
+  <div class="row">
+		<div ng-include="'components/navbar/side_navbar.html'"></div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main docs-container">
+			<div class="">
+				<div ui-view="" autoscroll="false" ng-class="app.viewAnimation" class="content-wrapper ng-scope ng-fadeInUp">
+					<flatdoc src="app/documentation/readme.md" class="ng-scope">
+						<div role="flatdoc">
+							<div role="flatdoc-menu">
+								<ul>
+									<li id="root-item" class="level-0">
+										<ul class="level-1" id="root-list">
+											<li id="angle-item" class="level-1">
+												<a id="angle-link" href="#angle" class="level-1">Indice</a>
+												<ul class="level-2" id="angle-list">
+													<li id="angle-overview-item" class="level-2">
+														<a id="angle-overview-link" href="#angle-overview" class="level-2">General</a>
+														<ul class="level-3" id="angle-overview-list">
+															<li id="angle-overview-support-item" class="level-3">
+																<a id="angle-overview-support-link" href="#angle-overview-support" class="level-3">Seguros</a>
+															</li>
+														</ul>
+													</li>
+													<li id="angle-getting-started-item" class="level-2">
+														<a id="angle-getting-started-link" href="#angle-getting-started" class="level-2">Fianzas</a>
+														<ul class="level-3" id="angle-getting-started-list">
+															<li id="angle-getting-started-tips-item" class="level-3">
+																<a id="angle-getting-started-tips-link" href="#angle-getting-started-tips" class="level-3">Flujo</a>
+															</li>
+															<li id="angle-getting-started-starting-the-app-item" class="level-3">
+																<a id="angle-getting-started-starting-the-app-link" href="#angle-getting-started-starting-the-app" class="level-3">Nuevo cliente</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div role="flatdoc-content">
+								<h1 id="angle">Peniche-Larrea Documentación</h1>
+								<h2 id="angle-overview">Overview</h2>
+								<p>This document aims to explain the best way to work with the product and its components.</p>
+								<p><strong>All the best and enjoy coding.</strong></p>
+								<h3 id="angle-overview-support">Support</h3>
+								<p>In case you have questions</p>
+								<p><a href="https://wrapbootstrap.com/user/themicon" class="button">Contact Support</a></p>
+								<h2 id="angle-getting-started">Getting started</h2><h3 id="angle-getting-started-tips">Tips</h3><ul>
+<li>Do not start from scratch, use an existing asset and modify it to learn how it works.</li>
+<li>Explore the sources for ideas and sample code.</li>
+<li>Use Firebug or Chrome Developer Tools to find bugs on your website. Using one of those tools will help you to save time analyzing the site and finding elements structure, like classes, id or tags<ul>
+<li>Quick tip: open your site with Chrome, press F12 and go to console tab, reload your page and if something goes wrong you will see your page errors in red text.</li>
+</ul>
+</li>
+<li>In case of error messages, someone might have seen it too, so you can try a Google search for a quick fix.</li>
+</ul><h3 id="angle-getting-started-starting-the-app">Starting the app</h3><p>Since this is AngularJS based application you need a server (Apache, IIS, xampp, etc)to serve the html files and perform http request to load all views.</p><p><strong>Important!</strong> Opening the index.html with a double click (i.e. using file:// protocol) will show you only a blank page because there’s no server that response to the requests made for each view in order to display the app interface.</p><h2 id="angle-customizing">Customizing</h2><h3 id="angle-customizing-structure">Structure</h3><p>Before starting to customize the template, here are the project files organization structure:</p><pre><code>+-- app/
+|   +-- css/
+|   +-- documentation/
+|   +-- img/
+|   +-- js/
+|   +-- i18n/
+|   +-- pages/
+|   +-- vendor/
+|   +-- views/
++-- master/
+|   +-- jade/
+|   |   +-- pages/
+|   |   +-- views/
+|   +-- js/
+|   |   +-- modules/
+|   |   |   +-- controllers/
+|   |   |   +-- directives/
+|   |   |   +-- services/
+|   |   +-- custom/
+|   +-- less/
+|   |   +-- app/
+|   |   +-- bootstrap/
+|   |   +-- themes/
+|   +-- gulpfile.js
+|   +-- package.json
+|   +-- bower.json
++-- server/
+|   +-- *.json
++-- vendor/
++-- index.html</code></pre><hr><h4>Main folders explanation</h4><p><strong>app/</strong> folder</p><p>This folder contains the compiled files. <strong>This files are ready to deploy on your server.</strong> </p><ul>
+<li>pages/
+This folder contains the compiled html files for the single pages (out of the app).</li>
+<li>views/
+This folder contains the compiled html files for the views and partials used for the app. </li>
+<li>i18n/
+This folder contains the json files use for translation.</li>
+<li>vendor/
+This folder contains vendor files not managed via bower</li>
+</ul><p><strong>master/</strong> folder</p><p>This folder contains the source files. You will find the following folders inside</p><ul>
+<li>jade/
+This folder contains JADE files. This files need to be compiled into html files to be displayed by a browser</li>
+<li>less/
+This folder contains the LESS files for the core styles and bootstrap styles. </li>
+<li>js/
+Here you will find pure JS files. All this files are concatenated into the file app.js. </li>
+</ul><p><strong>vendor/</strong> folder</p><p>This folder contains the vendor files used to include plugins and other components. This folder is handled via bower so optionally you can remove or upgrade the vendor components using such tool.</p><p><strong>server/</strong> folder</p><p>This folder contains server side files used for demonstration and guide for the flot chart and file upload components.</p><ul>
+<li><strong>sidebar-menu.json</strong>
+This file is <strong>important and required</strong> because it contains the sidebar menu definition.</li>
+</ul><h3 id="angle-customizing-custom-code">Custom code</h3><p>To add your own code you can follow this instructions:</p><p><strong>Working with css and js</strong></p><ul>
+<li>Create a file app/css/custom.css and add your own styles</li>
+<li>Create a file app/js/custom.js and add your own javascript</li>
+<li>Edit the file index.html and include custom.css after all other css files and custom.js after all other js files.</li>
+</ul><p><strong>Working with source files</strong></p><ul>
+<li>For JS, go to folder master/js/custom and start editing the file custom.js. After compile the source again with gulp, your own code will included at th bottom of file app/js/app.js.</li>
+<li>For LESS, go to folder master/less and create a folder called custom and add your won less files. Then edit file app.less and @import all your stylesheets at the bottom (overrides all app default styles)</li>
+</ul><p><strong>A note on updating</strong></p><blockquote>
+<p>The premise is, the less you change the downloaded code, the easier will be to apply any updates. Try always to keep your own code the most separated as possible from the package code to easily apply new updates when necessary.</p>
+</blockquote><h2 id="angle-build">Build</h2><p><strong>Important!</strong> You only need to follow this instructions in case you want to work with JADE, LESS and concatenate all JS modules.</p><p><strong>Node.js</strong> is a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications.</p><p><strong>Gulp</strong> is a task manager, you can define different tasks to run certain commands. Those commands does the compilation job for JADE and LESS, and concatenates the JS files.</p><p><strong>Bower</strong> is a dependency manager, it works by fetching and installing packages from all over, taking care of hunting, finding, downloading, and saving the stuff you’re looking for. Bower keeps track of these packages in a manifest file, bower.json. </p><p>The package includes under the master/ folder the file <strong>gulpfile.js</strong>,  <strong>package.json</strong> and <strong>bower.json</strong> to install the required components to compile the source files.</p><h4>Installing tools</h4><p>The following steps are intended to be an orientation guide, if you are not experienced with this you will need to learn more about it from Google :)</p><ul>
+<li>To install node and npm, go to <a href="http://nodejs.org/">http://nodejs.org/</a></li>
+<li>Run <strong>npm install -g bower</strong> to install bower to manage dependencies</li>
+<li>Download and install GIT for your platform <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></li>
+</ul><p>Once  you have all tools installed</p><ul>
+<li>Open a terminal, go the package <strong>master/</strong> folder, then run the command <strong>npm install</strong>. This command will install gulp and all project dependencies. </li>
+<li>Then, to install vendor dependencies, run <strong>bower install</strong></li>
+<li>Finally run <strong>gulp</strong> to start the task manager </li>
+</ul><p>If everything goes fine, you should see the messages in the terminal telling you that most the task are done ok. The task will watch for files to compile them automatically all files when change.</p><p>To enable the automatic page reload there is also included a LiveReload task that requires the Chrome plugin <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Livereload</a></p>
+</div></div></div></flatdoc></div>
+
+
+			</div>
+    </div>
+  </div>
+</div>

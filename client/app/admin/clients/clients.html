@@ -1,11 +1,11 @@
 <div ng-include="'components/navbar/admin_navbar.html'"></div>
 
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="AdminClientsCtrl">
   <div class="row">
 		<div ng-include="'components/navbar/side_navbar.html'"></div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     	<div id="page-title">
-				<h1 class="page-header text-overflow">Dashboard</h1>
+				<h1 class="page-header text-overflow">Clientes</h1>
 				<div class="searchbox">
 					<div class="input-group custom-search-form">
 					</div>
@@ -22,7 +22,7 @@
 					<div id="demo-dt-basic_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 						<div class="row">
 							<div class="col-sm-6 table-toolbar-left">
-								<button id="demo-btn-addrow" class="btn btn-purple btn-labeled fa fa-plus">Add</button>
+								<button id="demo-btn-addrow" class="btn btn-purple btn-labeled fa fa-plus">Agregar</button>
 								<button class="btn btn-default"><i class="fa fa-print"></i></button>
 								<div class="btn-group">
 									<button class="btn btn-default"><i class="fa fa-exclamation-circle"></i></button>
@@ -60,16 +60,28 @@
 										<tr role="row"><th class="sorting" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 157px;">Name</th><th class="sorting" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 258px;">Position</th><th class="min-tablet sorting_desc" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 113px;" aria-sort="descending">Office</th><th class="min-tablet sorting" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Extn.: activate to sort column ascending" style="width: 72px;">Extn.</th><th class="min-desktop sorting" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 120px;">Start date</th><th class="min-desktop sorting" tabindex="0" aria-controls="demo-dt-basic" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 88px;">Salary</th></tr>
 									</thead>
 									<tbody>
-										<tr role="row" class="odd" ng-repeat="user in users">
-											<td class="">{{user.name}}</td>
-											<td class="">{{user.email}}</td>
-											<td class="sorting_1">Tokyo</td>
-											<td>37</td>
-											<td>2009/08/19</td>
+					          <tr ng-repeat-start="client in clients">
+					            <td>
+					              <button ng-if="client.expanded" ng-click="client.expanded = false">-</button>
+					              <button ng-if="!client.expanded" ng-click="client.expanded = true">+</button>
+					            </td>
+					            <td>{{client.name}}</td>
+					            <td>{{client.phone}}</td>
+					            <td>{{client.city}}</td>
+					            <td>{{client.city}}</td>
 											<td>
 			      						<a ng-click="delete(user)" class="trash"><span class="glyphicon glyphicon-trash pull-right"></span></a>
 			      					</td>
-										</tr>
+					          </tr>
+					          <tr ng-if="client.expanded" ng-repeat="child in client.childs">
+					          	<td></td>
+					            <td>{{child.name}}</td>
+					            <td>{{child.phone}}</td>
+					            <td>{{child.city}}</td>
+					            <td>{{child.city}}</td>
+					          	<td></td>
+					          </tr>
+					          <tr ng-repeat-end></tr>
 									</tbody>
 								</table>
 							</div>
